@@ -1,1 +1,56 @@
-HAHA LOL
+<html>
+    <head>
+        <title class="title">
+            Etch-A-Sketch
+        </title>
+    
+        <div class="titleDiv">
+            <h1>Etch-A-Sketch</h1>
+            <h2>Click on the grid to toggle the pen</h2>
+        </div>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <meta charset="UTF-8"/>
+
+    </head>
+    
+    <body onload="makeCanvas(32, 32)">
+        <main>
+            <div class="mainDiv" id="mainDiv">
+
+                <div class="topButtonDiv" id="topButtonDiv">
+                    <a href="#/" class="blackInkButton">Black</a>
+                    <a href="#/" class="rainbowInkButton">Rainbow</a>
+                    <a href="#/" class="eraserButton">Eraser</a>
+                    <div class="pickColorDiv">
+                        <label id="pickColorLabel" for="pickColor">Pick A Color</label>
+                        <input type="color" id="pickColor" class="pickColorSelecter" name="pickColor" value="#ff0000">
+                    </div>
+                    
+
+
+                </div>
+
+
+                <div class="container" id="container">
+
+                </div>
+
+                <div class="bottomButtonDiv" id="bottomButtonDiv">
+                    <div class="sliderDiv">
+                        <p class="sizeText" id="sizeText" >Grid Size: 32 x 32</p>
+                        <input type="range" min="10" max="60" value="32" step="2" class="sizeSlider" id="sizeSlider"
+                        oninput="updateSize()">
+                    </div>
+                    <a href="#/" class="clearButton">Clear</a>
+                </div>
+            
+
+            </div>
+            
+        </main>
+        <script src="sketch.js"></script>
+    </body>
+</html>>
+
